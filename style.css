@@ -1,0 +1,275 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+:root {
+  --start: #134e5e;
+  --end: #71b280;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #134e5e, #71b280);
+  
+  position: relative;
+ 
+}
+
+nav::after {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #004e92, #000428);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+nav.dark::after {
+  opacity: 1;
+}
+
+h1{
+    color:#fff;
+}
+.logo{
+    z-index: 10;
+    margin: auto 15px;
+    font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.navmenu{
+    opacity: 1;
+}
+.navlink{
+    z-index: 99;
+}
+ ul{
+    margin: auto 15px;
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    list-style: none;
+    z-index: 10000;
+
+}
+ul li a{
+    cursor: pointer;
+    color: #fff;
+    transition: all .5s;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: #facc15 ;
+}
+
+.ham {
+    cursor: pointer;
+ width: 45px;
+ height: 45px;
+ margin: auto 15px;
+ z-index: 99;
+ display: none;
+ flex-flow:column ;
+ align-items: center;
+ justify-content: space-evenly;
+ 
+}
+
+.ham span {
+  width: 42px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50px;
+  transition: all .5s;
+  
+}
+
+
+.ham:hover{
+    span{
+        background: #facc15;
+    }
+    
+}
+.ham span.on{
+    position: absolute;
+}
+
+.ham.on{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ham.on span:nth-child(2){
+    display: none;
+}
+.ham.on span:nth-child(3){
+    transform: rotate(45deg);
+}
+.ham.on span:nth-child(1){
+    transform: rotate(-45deg);
+}
+.filter{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 96;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    transition: opacity .5s ;
+}
+
+
+@media (max-width:888px){
+    .filter{
+        display: block;
+    }
+    nav .navmenu{
+        border: 1px solid ;
+        z-index: 98;
+        transition: 0.5s all;
+        align-items: flex-start;
+        gap: 1.6rem !important;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: -50%;
+        background: linear-gradient(to bottom right , #44816f , #71b280);
+        
+    }
+    nav .navmenu ul{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 1.5rem;
+        z-index: 98;
+       
+    }
+    .ham{
+        display: flex;
+    }
+    
+    
+    
+}
+/* Landing Section */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+  text-align: center;
+  padding: 2rem;
+}
+
+.card {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.header {
+  background:#19e907;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #fff;
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+}
+
+.form {
+  padding: 1.2rem;
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+.form input::placeholder{
+  color: rgba(0,0,0,0.5);
+}
+
+.form button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #19e907;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+}
+.bg{
+   width:100vw ; 
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  /* background-image: url('assets/pic1.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
