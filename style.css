@@ -245,9 +245,7 @@ ul li a:hover{
 }
 
 @media (max-width:888px){
-    .filter{
-        display: none;
-    }
+  
     nav .navmenu{
       display: none ;
         border: 1px solid ;
@@ -276,6 +274,9 @@ ul li a:hover{
     
     
     
+}
+.filter {
+  display : none;
 }
 
 
