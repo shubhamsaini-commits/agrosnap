@@ -57,7 +57,7 @@ h1{
  
   display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .navmenu{
@@ -269,6 +269,7 @@ ul li a:hover{
     
     
 }
+
 
 
 
