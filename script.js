@@ -54,10 +54,11 @@ function getRandomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let randInt = getRandomInteger(1 , 8 )
+let randInt = getRandomInteger(1 , 9 )
 
 
-document.querySelector(".bg").style.backgroundImage = `url('/assests/pic${randInt}.jpg')`
+document.querySelector(".bg").style.backgroundImage = `url('agrospace/assets/pic${randInt}.jpg')`
+
 
 
 
