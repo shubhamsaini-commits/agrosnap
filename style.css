@@ -55,7 +55,7 @@ h1{
 }
 
 .navmenu{
-   display: none ;
+   opacity:1;
 }
 .navlink{
     z-index: 99;
@@ -147,6 +147,7 @@ ul li a:hover{
         display: block;
     }
     nav .navmenu{
+      display: none;
         border: 1px solid ;
         z-index: 98;
         transition: 0.5s all;
@@ -274,3 +275,4 @@ ul li a:hover{
   background-repeat: no-repeat;
 
 }
+
