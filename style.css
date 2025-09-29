@@ -194,7 +194,7 @@ ul li a:hover{
   border: 1px solid rgba(0,0,0,0.5);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.4);
-  color: #fff;
+  color: #000;
 }
 .form input::placeholder{
   color: rgba(0,0,0,0.5);
@@ -263,5 +263,6 @@ ul li a:hover{
     
     
 }
+
 
 
