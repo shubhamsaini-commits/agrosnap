@@ -55,7 +55,7 @@ h1{
 }
 
 .navmenu{
-    opacity: 1;
+   display: none ;
 }
 .navlink{
     z-index: 99;
@@ -272,4 +272,5 @@ ul li a:hover{
   /* background-image: url('assets/pic1.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
+
 }
