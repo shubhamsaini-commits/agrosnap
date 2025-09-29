@@ -54,6 +54,7 @@ function getRandomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let randInt = getRandomInteger(1 , 3 )
+let randInt = getRandomInteger(1 , 8 )
+
 
 document.querySelector(".bg").style.backgroundImage = `url('assets/pic${randInt}.jpg')`
