@@ -127,19 +127,7 @@ ul li a:hover{
 .ham.on span:nth-child(1){
     transform: rotate(-45deg);
 }
-.filter{
-    display: none;
-    opacity: 0;
-    position: absolute;
-    z-index: 96;
-    width: 100%;
-    height: 100vh;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    top: 0;
-    left: 0;
-    transition: opacity .5s ;
-}
+
 
 
 
@@ -275,9 +263,5 @@ ul li a:hover{
     
     
 }
-.filter {
-  display : none;
-}
-
 
 
