@@ -142,39 +142,7 @@ ul li a:hover{
 }
 
 
-@media (max-width:888px){
-    .filter{
-        display: block;
-    }
-    nav .navmenu{
-      display: none;
-        border: 1px solid ;
-        z-index: 98;
-        transition: 0.5s all;
-        align-items: flex-start;
-        gap: 1.6rem !important;
-        position: absolute;
-        width: 50%;
-        height: 100vh;
-        top: 0;
-        right: -50%;
-        background: linear-gradient(to bottom right , #44816f , #71b280);
-        
-    }
-    nav .navmenu ul{
-        display: flex;
-        flex-direction: column;
-        padding: 5rem 1.5rem;
-        z-index: 98;
-       
-    }
-    .ham{
-        display: flex;
-    }
-    
-    
-    
-}
+
 /* Landing Section */
 .landing {
   display: flex;
@@ -276,5 +244,38 @@ ul li a:hover{
 
 }
 
+@media (max-width:888px){
+    .filter{
+        display: block;
+    }
+    nav .navmenu{
+      display: none ;
+        border: 1px solid ;
+        z-index: 98;
+        transition: 0.5s all;
+        align-items: flex-start;
+        gap: 1.6rem !important;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: -50%;
+        background: linear-gradient(to bottom right , #44816f , #71b280);
+        
+    }
+    nav .navmenu ul{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 1.5rem;
+        z-index: 98;
+       
+    }
+    .ham{
+        display: flex;
+    }
+    
+    
+    
+}
 
 
