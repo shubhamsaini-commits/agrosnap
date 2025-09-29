@@ -33,7 +33,7 @@ ham.addEventListener('click' , ()=>{
     if(isMenuOn === false){
         menu.style.right = "0px"
         menu.style.opacity = "1"    
-       // menu.style.display = "block"
+        menu.style.display = "block"
         isMenuOn = true
         filter.style.opacity = 1 
         filter.style.left = "0"
@@ -41,7 +41,7 @@ ham.addEventListener('click' , ()=>{
     else {
         menu.style.right = "-50%"
         menu.style.opacity = "0"
-       // menu.style.display = "none"
+        menu.style.display = "none"
         isMenuOn = false
         filter.style.opacity = 0 
         filter.style.right = "-100%"
@@ -58,5 +58,6 @@ let randInt = getRandomInteger(1 , 8 )
 
 
 document.querySelector(".bg").style.backgroundImage = `url('agrosnap/assests/pic${randInt}.jpg')`
+
 
 
