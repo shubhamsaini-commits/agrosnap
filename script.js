@@ -23,7 +23,7 @@ let isMenuOn = false
 
 let ham = document.querySelector('.ham')
 let lines = document.querySelector('.ham span')
-let filter = document.querySelector('.filter')
+
 let menu = document.querySelector('.navmenu')
 ham.addEventListener('click' , ()=>{
     
@@ -35,16 +35,14 @@ ham.addEventListener('click' , ()=>{
         menu.style.opacity = "1"    
         menu.style.display = "block"
         isMenuOn = true
-        filter.style.opacity = 1 
-        filter.style.left = "0"
+     
     }
     else {
         menu.style.right = "-50%"
         menu.style.opacity = "0"
         menu.style.display = "none"
         isMenuOn = false
-        filter.style.opacity = 0 
-        filter.style.right = "-100%"
+   
     }
 })
 
@@ -58,6 +56,7 @@ let randInt = getRandomInteger(1 , 9 )
 
 
 document.querySelector(".bg").style.backgroundImage = `url('./assets/pic${randInt}.jpg')`
+
 
 
 
