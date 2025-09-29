@@ -57,7 +57,8 @@ function getRandomInteger(min, max) {
 let randInt = getRandomInteger(1 , 8 )
 
 
-document.querySelector(".bg").style.backgroundImage = `url('assests/pic${randInt}.jpg')`
+document.querySelector(".bg").style.backgroundImage = `url('/agrosnap/assests/pic${randInt}.jpg')`
+
 
 
 
